@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Система запросов Avialogo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" >
+  </head>
+<body>
+  <div class="wrapper">
+		<h1 class="main-header">To-Do List</h1>
+		<form class="main-form">
+			<input type="text" placeholder="Enter To-Do element..." class="main-form__field">
+			<div class="main-form__buttons">
+				<a href="#" class="add-todo"><i class="fa fa-plus" aria-hidden="true"></i></a>
+				<a href="#" class="clean-value"><i class="fa fa-trash" aria-hidden="true"></i></a>
+			</div>
+		</form>
+      <ul class="todo-list">
+        <template id ="item-todo-list-template">
+          <li class="todo-list__item">
+            <div class="todo-list__buttons">
+              <a class="up-check"><i class="fa fa-toggle-up"></i></a>
+              <a class="down-check"><i class="fa fa-toggle-down"></i></a>
+              <a class="add-check"><i class="fa fa-check"></i></a>
+              <a class="delete-todo"><i class="fa fa-trash"></i></a>
+            </div>
+          </li>
+        </template>
+      </ul>
+	</div>
+  <script src="js/todolist.js"></script>
+</body>
+</html>

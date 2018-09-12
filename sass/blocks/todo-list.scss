@@ -1,0 +1,42 @@
+/* todo-list.scss */
+
+.todo-list {
+  list-style: none;
+  &__item {
+    width: 80%;
+    position: relative;
+	  background-color: #FFFFFF;
+	  padding: 1rem;
+	  border-radius: 10px;
+	  text-align: left;
+	  margin-bottom: 20px;
+	  font-weight: 600;
+	  font-size: 20px;
+    color: #E32636;
+	  padding: 20px 120px 20px 20px;
+	  transition: all 0.6s;
+	  box-shadow: 0 1px 9px #BDB76B;
+  }
+
+  &__buttons {
+    position: absolute;
+	  right: 0;
+	  top: 50%;
+	  margin-top: -15px;
+    margin-right: 20px;
+
+    & a {
+	    display: inline-block;
+	    transition: all 0.3s;
+      padding-left: 6px;
+	    font-size: 24px;
+	    cursor: pointer;
+        &:last-child {
+          padding-right: 5px;
+        }
+      &:hover {
+        color: #F0E68C;
+      }
+    }
+  }
+}

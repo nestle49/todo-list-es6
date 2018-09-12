@@ -1,0 +1,9 @@
+/* Собрать все стили */
+
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "global/main.scss";
+
+@import "blocks/form.scss";
+@import "blocks/todo-list.scss";
